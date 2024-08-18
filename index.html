@@ -1,32 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tea House</title>
     <!-- google font cdn -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
     <!-- font_awewsome cdn -->
-    <script src="https://kit.fontawesome.com/750a673fff.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/750a673fff.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
-        }
-      </script>
-</head>
-<body>
-    <header></header>
-    <main></main>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- CSS styles -->
+    <style>
+      .manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+  </head>
+  <body class=" manrope">
+    <main
+      class="max-w-screen-xl mx-auto px-16 lg:px-24 border border-indigo-500"
+    >
+    <!-- banner section -->
+      <header class="lg:flex mt-20">
+        <div>
+          <h3 class="text-6xl font-extrabold leading-tight">
+            It's good <br />
+            tea time at The <br />
+            Tea House
+          </h3>
+          <p class="text-gray-500 w-3/4">
+            Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+            Your Taste Buds.
+          </p>
+          <button class="p-5 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg font-bold text-lg text-white">Explore More  <i class="fa-solid fa-arrow-right text-xl -rotate-45"></i></button>
+        </div>
+
+        <div class="relative flex items-end">
+            <!-- image -->
+            <div><img class="w-full" src="./images/banner.png" alt=""></div>
+            <!-- card -->
+            <div class="absolute flex items-center bg-white shadow-lg px-5 py-5 rounded-lg bottom-0 left-8 md:bottom-6 md:left-36 lg:left-24">
+                <div><i class="fa-solid fa-star text-[#FFDC64] text-3xl"></i></div>
+                <div class="ml-2">
+                    <h4 class="text-xl font-extrabold ">5.00</h4>
+                    <p class="text-sm text-gray-500">Trust Pilot Ratings</p>
+                </div>
+            </div>
+        </div>
+
+      </header>
+    </main>
     <footer></footer>
-</body>
+  </body>
 </html>
